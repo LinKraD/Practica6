@@ -20,7 +20,6 @@ import android.widget.TextView;
 import net.iesseveroochoa.gabrielvidal.practica6.Model.Pokemon;
 import net.iesseveroochoa.gabrielvidal.practica6.R;
 import net.iesseveroochoa.gabrielvidal.practica6.adapters.PokemonApiAdapter;
-import net.iesseveroochoa.gabrielvidal.practica6.repository.PokemonRepository;
 import net.iesseveroochoa.gabrielvidal.practica6.utils.Utils;
 import net.iesseveroochoa.gabrielvidal.practica6.viewmodels.PokemonApiViewModel;
 
