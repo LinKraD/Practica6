@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/holo_orange_light"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Arceus" />
+
+        <ImageView
+            android:id="@+id/ivImagenPokemon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvNombre"
+            tools:srcCompat="@drawable/arceus"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tvFechaCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/ivBorrar"
+            card_view:layout_constraintHorizontal_bias="0.5"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/ivImagenPokemon"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:text="Fecha compra" />
+
+        <ImageView
+            android:id="@+id/ivBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tvFechaCompra"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.5"
+            card_view:layout_constraintStart_toEndOf="@+id/tvFechaCompra"
+            card_view:layout_constraintTop_toTopOf="@+id/tvFechaCompra"
+            card_view:srcCompat="@android:drawable/ic_menu_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
